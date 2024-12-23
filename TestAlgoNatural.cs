@@ -235,7 +235,7 @@ public class TestAlgoNatural : IAlgorithm
                 // there we should get curr element in the file
                 var currElement = ReadLine(files[i].Item1.BaseStream, false);
                 if (currElement == "") continue;
-                if (_comparer.Compare(currElement, minElement) < 0)
+                if (_comparer.Compare(currElement, minElement) <= 0)
                 {
                     minElement = currElement;
                     result = i;
